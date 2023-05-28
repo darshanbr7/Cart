@@ -33,27 +33,9 @@ const userDB=new Schema({
     address:{
         type :String,
         required:[true,"address is required"]
-    },
-    city:{
-        type:String,
-        required:[true,"city is required"]
-        },
-    state:{
-        type:String,
-        required:[true,"state is required"]
-    },
-     zipcode :{
-        type:String,
-        validate:{
-            validator:function(value){
-              return isNumber(value)
-            },
-            message:function(){
-                return "Zip code must be a number"
-            }
-        },
-        required:[true,"zipcode is required"]
     }
+   
+ 
 })
 const user=mongoose.model("user",userDB)
 

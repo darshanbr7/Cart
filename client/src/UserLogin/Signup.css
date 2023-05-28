@@ -1,0 +1,30 @@
+.signup{
+    background-color: rgb(116, 172, 233);
+     width: 80rem;
+     height: 31rem;
+}
+.form-box{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+.dropbtn{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    width: 12rem;
+}
+.checkbox{
+    margin-left: 30rem;
+    margin-top: 1rem;
+}
+.paragraph{
+margin-left: 31rem;
+margin-top: 1rem;
+}

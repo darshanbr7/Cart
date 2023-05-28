@@ -1,36 +1,34 @@
 import React from 'react'
+import {RiAccountPinCircleLine} from "react-icons/ri"
+import {HiOutlineMail} from "react-icons/hi"
+import {MdPassword} from "react-icons/md"
 import {Link} from "react-router-dom"
+import "./Login.css"
 const Tlogin = () => {
   return (
-    <div>
-         <div>
-        <div className="conatiner">
-            <div className="row">
-                <div className="col-md-4"></div>                
-                <div className="col-md-4 mt-3">              
-                    <div className="card mt-4">
-                        <div className="card-body">
-                            <form >
-                              <div className="form-group">
-                               <label>Email :</label>
-                               <input type="text"  className='form-control' />
-                              </div>
-                              <div className="form-group">
-                               <label>Password :</label>
-                               <input type="text"  className='form-control' />
-                              </div>
-                              <center>
-                                <button className='btn btn-success my-3'>Login</button>
-                              </center>
-                              <p>new  user ?  Signup <Link to={"/Msignup"}>here</Link></p>
-                            </form>
-                        </div>
-                    </div>
+    <>
+    <div className='login'>
+    
+      <form action="">
+      <center>
+               <div >
+                <label ><RiAccountPinCircleLine size={25} color='brown'/>  </label>
+                <input type="text"  className='form-box '  autoComplete='off' placeholder='Name '/>
                 </div>
-            </div>
-        </div>
-    </div>
-    </div>
+                <div>
+                <label ><HiOutlineMail size={25}/>  </label>
+                <input type="text"  className='form-box'  autoComplete='off' placeholder='Email '/>
+                </div>
+                <div>
+                <label ><MdPassword size={25}/>  </label>
+                <input type="text"  className='form-box'  autoComplete='off' placeholder='Password'/>
+                </div>
+                <button className="btn btn-danger mt-3">Login</button>
+                </center>
+                <p className='paragraph'>new  User ?  <Link to={"/Signup"} color={"white"}>Register</Link></p>   
+                </form>                
+          </div>
+    </>
   )
 }
 

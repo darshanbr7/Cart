@@ -1,0 +1,17 @@
+.login{
+    background-color: rgb(162, 220, 244);
+     width: 80rem;
+     height: 31rem;
+}
+.form-box{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+.paragraph{
+    margin-left: 37rem;
+}
+    
