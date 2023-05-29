@@ -65,9 +65,13 @@ const Signup = () => {
                 <div>
                     <label ><BsPersonFillExclamation size={25}/>  </label>                  
                     <select value={role} onChange={(e)=>{setRole(e.target.value)}} className='dropbtn'>
+                        <option value=""></option>
                         <option value="manufacturer">Manufacturer</option>
                         <option value="transporter">Transporter</option>
                         </select>
+                        {
+                          role===""? <p style={{color:"red"}}>Please Select the role</p>   :<></>
+                        }
                 </div>
                 <div>
                     <label ><FaMapMarkerAlt size={25}/>  </label>
